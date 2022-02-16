@@ -14,7 +14,7 @@ def romanize (num:int)->str:
         ["", "M", "MM", "MMM"]
 
     ]
-    array =[]
-    descomponer(num, array, lambda d, i:romans[i][d])
+    
+    descomponer(num, array:=[], lambda d, i:romans[i][d])
     return "".join(array)
 
